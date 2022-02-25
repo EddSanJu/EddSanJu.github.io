@@ -1,15 +1,16 @@
 /* get the current day*/
 const day = new Date().getDay();
-const month = new Date().getMonth();
+var month = new Date().getMonth();
 const year = new Date().getFullYear();
 const date = new Date().getDate();
+const hour = new Date().getHours();
+const minute = new Date().getMinutes();
+const second = new Date().getSeconds();
 
-const listDays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-const listMonths = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+month += 1;
 
-const currentDay = listDays[day];
-const currentMonth = listMonths[month];
 
-const complteteDate = `${currentDay}/${currentMonth}/${date}/${year}`;
+
+const complteteDate = `Last Update: ${month}/${date}/${year} ${hour}:${minute}:${second}`;
 
 document.getElementById('current-date').textContent = complteteDate;

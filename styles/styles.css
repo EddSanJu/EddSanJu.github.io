@@ -77,3 +77,14 @@ body {
     font-size: 1em;
     margin-left: 250px;
 }
+
+.url {
+    text-decoration: none;
+    color: #a21232;
+    transition: 0.5s;
+}
+
+.url:hover {
+    color: #541f1f;
+}
+
