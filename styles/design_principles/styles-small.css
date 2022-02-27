@@ -1,0 +1,15 @@
+@media only screen and (max-width: 550px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    h1 , h2 {
+        font-size: 0.9em;
+    }
+
+    .design-container {
+        font-size: 0.7em;
+        flex-direction: column;
+    }
+}

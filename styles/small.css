@@ -3,8 +3,7 @@ body {
     margin: 0;
 }
 
-.header-container {
-    display: flex;
+.header-container { 
     width: 95%;
     height: 200px;
     background-color: #0C0A39;
@@ -12,29 +11,27 @@ body {
     border-radius: 10px;
     margin: 0 auto;
     align-items: center;
-    margin-top: 20px;
 }
 
 .header-container h1 {
     font-size: 3.5em;
-    margin: 80px;
-    padding-left: 10px;
+    /* margin: 80px; */
+    
 }
 
 .header-container img {
-    margin-top: 500px;
+    /* margin-top: 500px; */
     border-radius: 10px;
     z-index: 1;
+    float: right;
     width: 500px;
-    margin-left:125px;
+    margin-right:20px;
     box-shadow: -3px 10px 62px 13px rgba(0,0,0,0.75);
 -webkit-box-shadow: -3px 10px 62px 13px rgba(0,0,0,0.75);
 -moz-box-shadow: -3px 10px 62px 13px rgba(0,0,0,0.75);
 }
 
 .content {
-    display: flex;
-    flex-direction: column;
     width: 95%;
     margin : 0 auto;
     margin-right: 10px;
