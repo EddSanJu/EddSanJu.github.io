@@ -1,0 +1,50 @@
+@media only screen and (max-width: 720px) {
+    .logo-title {
+        height: auto;
+    }
+
+    .nav-bar {
+        display: none;
+    } 
+
+    .nav-bar__responsive{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        justify-content: space-around;
+        align-items: center;
+        background-color: rgb(111, 76, 31);
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-bar__responsive a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        transition: 0.2s;
+    }
+
+    .nav-bar__responsive a:hover {
+        color: rgb(186, 179, 179);
+    }
+
+    img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .logo-title-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    i {
+        display: inline;
+    }
+}

@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+h1  {
+    font-family: 'League Gothic', sans-serif;
+    color: antiquewhite;
+    font-size: 3.5em;
+    margin: 0;
+    letter-spacing: 2.5px;
+}
+
+h4 { 
+    margin: 0;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+.logo-title {
+    display: flex;
+    width: 100%;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(170, 114, 40);
+}
+
+.logo-title-wrapper{
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+}
+
+.nav-bar {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(111, 76, 31);
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: 0.2s;
+}
+
+.nav-bar a:hover {
+    color: rgb(186, 179, 179);
+}
+
+main h1 {
+    font-size: 2.5em;
+    margin: 0;
+    letter-spacing: 2.5px;
+    color: black;
+}
+
+.footer-container {
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background-color:rgb(170, 114, 40);
+    color:#ABB3B6;
+    /* border-radius: 10px; */
+    margin: 0 auto;
+    margin-top: 20px;
+    justify-content: center;
+    margin-top: 170px;
+    flex-direction: column;
+    /* margin-bottom: 20px; */
+}
+
+.footer-container p {
+    font-size: 1.4em;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+li {
+    list-style-type: none;
+}
+
+i {
+    display: none;
+}

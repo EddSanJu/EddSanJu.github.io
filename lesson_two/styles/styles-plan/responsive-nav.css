@@ -1,0 +1,16 @@
+@media only screen and (max-width: 550px) {
+    .nav-bar {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .nav-bar a {
+        padding: 10px;
+    }
+
+    .grid-container  {
+        grid-template-columns: 1fr;
+    }
+}
+
