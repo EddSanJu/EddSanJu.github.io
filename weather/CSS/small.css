@@ -46,5 +46,6 @@
 
     i {
         display: inline;
+        cursor: pointer;
     }
 }
