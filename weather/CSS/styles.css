@@ -31,8 +31,12 @@ img {
 
 .logo-title-wrapper{
     display: flex;
-    width: 40%;
-    justify-content: space-around;
+    width: 80%;
+    align-items: center;
+}
+
+.title {
+    margin-left: 25px;
 }
 
 .nav-bar {
@@ -91,4 +95,72 @@ li {
 
 i {
     display: none;
+}
+
+.main {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.main-wrapper {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+}
+
+.hero {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.over-info {
+    background-color: rgb(168, 179, 179); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    margin: -225px 0 25px 30px;
+    opacity: 0.8;
+}
+
+.over-info h1 {
+    font-size: 1.2em;
+}
+
+.over-info h2 {
+    margin: 0;
+    font-size: 1.0em;
+}
+
+.line {
+    width: 85%;
+    height: 1px;
+    background-color: black;
+}
+
+.forecast-container {
+    display: grid;
+    width: 65%;
+    margin: 0 auto;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 25px;
+    gap: 10px;
+}
+
+.forecast-container img {
+    width: 50px;
+    height: 50px;
+}
+
+.corecast-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(218, 217, 217);
 }
