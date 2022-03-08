@@ -22,3 +22,11 @@ function changeClass () {
         x.className = 'nav-bar';
     }
 }
+
+function restoreClass () {
+    var windowSize = window.innerWidth;
+    if (windowSize > 720) {
+        var x = document.getElementById("responsive-class");
+        x.className = 'nav-bar';
+    }
+}
