@@ -61,6 +61,12 @@ img {
     color: rgb(186, 179, 179);
 }
 
+.img-menu {
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+}
+
 main h1 {
     font-size: 2.5em;
     margin: 0;
@@ -92,7 +98,7 @@ li {
     list-style-type: none;
 }
 
-i {
+.img-menu {
     display: none;
 }
 
