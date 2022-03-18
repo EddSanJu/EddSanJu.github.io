@@ -1,0 +1,19 @@
+@media only screen and (max-width: 700px) {
+    .label-content p::after {
+        content: 'Medium';
+        visibility: visible;
+    }
+
+    .location-media {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    iframe {
+        margin-top: 20px;
+    }
+
+    .media {
+        margin: 30px 0;
+    }
+}

@@ -209,7 +209,7 @@ li {
 iframe {
     width: 400px;
     height: 200px;
-    margin-left: 15px;
+    margin-left: 10%;
     margin-top: -25px;
 }
 
@@ -228,4 +228,19 @@ iframe {
 
 .icon-media i:hover {
     color: rgb(121, 82, 30);
+}
+
+.label-content p{
+    visibility: hidden;
+    float: right;
+    position: relative;
+    margin: -375px 5% 0 0;
+    font-size: 1.5em;
+    color: yellow;
+    font-weight: 600;
+}
+
+.label-content p::after {
+    content: 'large';
+    visibility: visible;
 }

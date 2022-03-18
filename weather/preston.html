@@ -18,6 +18,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=League+Gothic&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/medium.css">
     <link rel="stylesheet" href="CSS/small.css">
 
     <title>Weather</title>
@@ -51,11 +52,17 @@
             <div class="over-info">
                 <h1>Weather summary</h1>
                 <div class="line"></div>
-                <h2>Currently: Sunny</h2>
-                <h2>Currently: Sunny</h2>
-                <h2>Currently: Sunny</h2>
-                <h2>Currently: Sunny</h2>
-                <h2>Currently: Sunny</h2>
+                <h2>Currently: <span id="temp">38</span> &deg;F Broken Clouds</h2>
+                <h2>Feels Like: <span id="chill"></span> &deg;F</h2>
+                <h2>High: <span id="high">41</span> &deg;F</h2>
+                <h2>Humidity: <span id="humidity">50</span> %</h2>
+                <h2>Wind Speed: <span id="speed">5</span> mph</h2>
+
+            </div>
+            <div class="label-content">                
+                <p>
+                    "place holder"
+                </p>
             </div>
             <h1>Five Day Forecast</h1>
                 <div class="forecast-container">
@@ -134,4 +141,5 @@
      </footer>
 </body>
 <script src="js/js-two.js"></script>
+<script src="js/windchill.js"></script>
 </html>

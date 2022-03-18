@@ -1,4 +1,4 @@
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 500px) {
     .logo-title {
         height: auto;
     }
@@ -114,5 +114,14 @@
 
     .footer-container {
         font-size: 0.8em;
+    }
+
+    .label-content p {
+        margin: -290px 10px 0 0;
+    }
+
+    .label-content p::after {
+        content: 'Small';
+        visibility: visible;
     }
 }
