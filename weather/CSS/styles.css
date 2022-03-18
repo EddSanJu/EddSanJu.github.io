@@ -244,3 +244,15 @@ iframe {
     content: 'large';
     visibility: visible;
 }
+
+/*announcement*/
+
+#announcement p{
+    background-color: yellow;
+    margin: 0;
+    padding: 10px;
+}
+
+.false {
+    display: none;
+}

@@ -8,7 +8,8 @@ const second = new Date().getSeconds();
 
 month += 1;
 
-
+console.log(typeof day);
+console.log(day);
 
 const complteteDate = `${month}/${date}/${year}`;
 
@@ -30,3 +31,13 @@ function restoreClass () {
         x.className = 'nav-bar';
     }
 }
+
+ function fridayAnnouncement () {
+    if (day === 5) {
+        var dayClass = document.getElementById('announcement');
+        if (dayClass.className === 'false') {
+            dayClass.className = 'true';
+        }
+    }
+}
+
