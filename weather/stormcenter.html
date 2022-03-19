@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link
+  rel="stylesheet"
+  href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+  integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+  crossorigin="anonymous"
+/>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=League+Gothic&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="CSS/gallery/main-img.css">
+    <link rel="stylesheet" href="CSS/gallery/medium-img.css">
+    <link rel="stylesheet" href="CSS/gallery/small-img.css">
+
+    <title>Report storm</title>
+</head>
+<body>
+    <header>
+        <div class="logo-title">
+            <div class="logo-title-wrapper">
+               <img class="logo" src="images/sun.png" alt="sub_img.jpeg">
+               <div class="title">
+                   <h1>Coco Skyes</h1>
+               </div>
+               <img class="img-menu" src="images/square_menu.png" alt="menu.png" onClick="changeClass()">
+           </div>
+        </div>
+        <nav>
+            <ul class="nav-bar" id="responsive-class">
+               <li><a href="../lesson_two/index.html">Home</a></li>
+               <li><a href="../lesson_two/plan/taget-audience.html">Target Aduience</a></li>
+               <li><a href="../lesson_two/plan/color-scheme.html">Color Scheme</a></li>
+               <li><a href="../lesson_two/plan/typography.html">Typography</a></li>
+           </ul>
+        </nav>
+    </header>
+    <main>
+        <form class="form-wrapper" action="">
+            <h2>Contact info</h2>
+            <div class="personal-info">
+                <label for="name">Your Full Name</label>
+                <input type="text" name="name" placeholder="Name" pattern="[A-Za-z]">
+                
+                <label for="email">Your email</label>
+                <input type="email" placeholder="Example@byui.edu">
+                
+                <label for="phone">Your phone number</label>
+                <input type="tel" placeholder="(123) 456-7890" pattern="[0-9]{9}" required>
+    
+                <label for="zip-code">Zip code</label>
+                <input type="number" placeholder="56680" pattern="[0-9]{5} [A-Za-z]" required>
+            </div>
+            <h2>Storm Info</h2>
+            <div class="storm-info">
+                <label for="storm-date">Storm Date</label>
+                <input type="date" name="storm-date" required>
+
+                <label for="storm-type">Storm Type</label>
+                <div>
+                    <input list="storm-type" placeholder="Storm Type">
+                    <datalist id="storm-type">
+                        <option value="Flash Flood">
+                        <option value="Hail">
+                        <option value="Hurricane">
+                        <option value="Thunderstorm">
+                        <option value="Tornado">
+                    </datalist>
+                </div>
+                
+                <label for="storm-severity">Storm Severity</label>
+                <div class="rating-options__wrapper">
+                    <label class="flexly" for="rating">Rating: &nbsp;&nbsp;&nbsp;
+                        <input type="range" id="rating" value="0" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                        <span id="ratingvalue">0</span>
+                    </label>
+            
+                    <datalist id="tickmarks">
+                        <option value="0">
+                        <option value="1">
+                        <option value="2">
+                        <option value="3">
+                        <option value="4">
+                        <option value="5">
+                        <option value="6">
+                        <option value="7">
+                        <option value="8">
+                        <option value="9">
+                        <option value="10">
+                    </datalist>
+                </div>
+
+
+                <label for="storm-region">Storm Region</label>
+                <select name="storm-region" id="region">
+                    <option value="1">Select</option>
+                    <option value="2">Preston</option>
+                    <option value="3">Soda Springs</option>
+                    <option value="4">Fish Haven</option>
+                </select>
+
+                <label for="in-danger-level">Danger Level</label>
+                <div class="radio-options">
+                    <input type="radio" value="yes" name="risk">
+                    <label for="risk">Yes</label>
+
+                    <input type="radio" value="no" name="risk">
+                    <label for="risk">No</label>
+
+                    <input type="radio" value="maybe" name="risk">
+                    <label for="risk">Maybe</label>
+                </div>
+
+                <label for="information">More information</label>
+                <textarea name="information" id="information" placeholder="Add Informtaion"></textarea>
+            </div>
+            <div class="submit-button">
+            <input class="btn" type="submit" value="Submit" onclick="redirect()">
+        </form>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <p>&copy2022 | Eduardo Sánchez | <span id="current-date"></span> | <a class="url" href="https://www.byui.edu/online" target="_blank">BYUI Online Learning</a></p>
+            
+          </div>
+     </footer>
+    
+</body>
+<script src="js/js-two.js"></script>
+<script src="js/sleepy-img.js"></script>
+</html>

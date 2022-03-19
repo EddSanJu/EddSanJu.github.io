@@ -115,3 +115,87 @@ li {
     margin-top: 20px;
     margin-left: 50px;
 }
+
+/*styles for the form*/
+
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+}
+.personal-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 60%;
+    margin: 0 auto;
+    align-items: center;
+    border: 1px solid gray;
+    padding: 20px;
+    border-radius: 5px;
+}
+.personal-info label {
+    font-size: 1.2em;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.personal-info input {
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.storm-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 60%;
+    margin: 0 auto;
+    align-items: center;
+    border: 1px solid gray;
+    padding: 20px;
+}
+
+.storm-info label {
+    font-size: 1.2em;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.storm-info input {
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+input[type="date" i] {
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+input[type="date" i]{
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.storm-info select {
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.radio-options {
+    border: 1px solid gray;
+    padding: 12px;
+    margin-bottom: 10px;
+}
+
+textarea {
+    height: 100px;
+}
+
+.btn {
+    padding: 15px 20px;
+    cursor: pointer;
+    color: white;
+    background-color: gray;
+    margin: 20px
+}

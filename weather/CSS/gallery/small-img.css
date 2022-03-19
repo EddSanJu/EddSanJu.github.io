@@ -64,4 +64,12 @@
         display: inline;
         cursor: pointer;
     }
+
+    .personal-info {
+        grid-template-columns: 1fr;
+    }
+
+    .storm-info {
+        grid-template-columns: 1fr;
+    }
 }
