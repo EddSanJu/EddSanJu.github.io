@@ -1,0 +1,8 @@
+@media screen and (max-width: 1050px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+  .prophets-medium {
+    font-size: 1.5rem;
+  }
+}
