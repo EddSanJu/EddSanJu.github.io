@@ -1,0 +1,281 @@
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+h1  {
+    font-family: 'League Gothic', sans-serif;
+    color: antiquewhite;
+    font-size: 3.5em;
+    margin: 0;
+    letter-spacing: 2.5px;
+}
+
+h4 { 
+    margin: 0;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+.logo-title {
+    display: flex;
+    width: 100%;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(170, 114, 40);
+}
+
+.logo-title-wrapper{
+    display: flex;
+    width: 80%;
+    align-items: center;
+}
+
+.title {
+    margin-left: 25px;
+}
+
+.nav-bar {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(111, 76, 31);
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: 0.2s;
+}
+
+.nav-bar a:hover {
+    color: rgb(186, 179, 179);
+}
+
+.img-menu {
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+}
+
+main h1 {
+    font-size: 2.5em;
+    margin: 0;
+    letter-spacing: 2.5px;
+    color: black;
+}
+
+.footer-container {
+    display: flex;
+    width: 100%;
+    background-color:rgb(170, 114, 40);
+    color:#ABB3B6;
+    /* border-radius: 10px; */
+    margin: 0 auto;
+    margin-top: 20px;
+    justify-content: center;
+    flex-direction: column;
+    /* margin-bottom: 20px; */
+}
+
+.footer-container p {
+    font-size: 1.4em;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.img-menu {
+    display: none;
+}
+
+.main {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.main-wrapper {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+}
+
+.hero {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.over-info {
+    background-color: rgb(168, 179, 179); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    margin: -375px 0 180px 30px;
+    opacity: 0.8;
+}
+
+.over-info h1 {
+    font-size: 1.2em;
+}
+
+.over-info h2 {
+    margin: 0;
+    font-size: 1.0em;
+}
+
+.line {
+    width: 85%;
+    height: 1px;
+    background-color: black;
+    margin: 0 auto;
+}
+
+.forecast-container {
+    display: grid;
+    width: 65%;
+    margin: 0 auto;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 25px;
+    gap: 10px;
+}
+
+.forecast-container img {
+    width: 50px;
+    height: 50px;
+}
+
+.forecast-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(218, 217, 217);
+}
+
+.article-title-wrapper{
+    margin-top: 25px;
+    background-color: lightgray;
+    padding: 10px;
+    text-align: center;
+}
+
+.article-title-wrapper h1{
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.article-title-img{
+    float: right;
+    width: 300px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.location-media{
+    display: grid;
+    width: 90%;
+    height: 250px;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: rgb(248, 212, 164);
+    margin: 0 auto;
+    margin-top: 25px;
+    align-items: center;
+    justify-items: center;
+    gap: 40px;
+}
+
+.map-1 {
+    width: 400px;
+    height: 150px;
+}
+
+iframe {
+    width: 400px;
+    height: 200px;
+    margin-left: 10%;
+    margin-top: -25px;
+}
+
+.icon-media {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+.icon-media i {
+    font-size: 1.2em;
+    color: rgb(170, 114, 40);
+    transition: 0.5s;
+}
+
+.icon-media i:hover {
+    color: rgb(121, 82, 30);
+}
+
+.label-content p{
+    visibility: hidden;
+    float: right;
+    position: relative;
+    margin: -375px 5% 0 0;
+    font-size: 1.5em;
+    color: yellow;
+    font-weight: 600;
+}
+
+.label-content p::after {
+    content: 'large';
+    visibility: visible;
+}
+
+/*announcement*/
+
+#announcement p{
+    background-color: yellow;
+    margin: 0;
+    padding: 10px;
+}
+
+.false {
+    display: none;
+}
+
+.true {
+    display: block;
+}
+
+/*styles for the api home page*/
+.towns {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 20px 0px;
+}
+
+section {
+    margin-top: 20px;
+    width: 300px;
+    height: 400px;
+    text-align: center;
+    border: 1px solid darkgray;
+}

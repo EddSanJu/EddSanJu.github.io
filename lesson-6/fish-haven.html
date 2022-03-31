@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link
+  rel="stylesheet"
+  href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+  integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+  crossorigin="anonymous"
+/>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=League+Gothic&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/medium.css">
+    <link rel="stylesheet" href="CSS/small.css">
+
+    <title>Fish Haven</title>
+</head>
+<body onload="fridayAnnouncement()">
+     <header>
+        <div class="false" id="announcement">
+            <p>
+               Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion
+            </p>
+        </div>
+         <div class="logo-title">
+             <div class="logo-title-wrapper">
+                <img class="logo" src="images/sun.png" alt="sub_img.jpeg">
+                <div class="title">
+                    <h1>Coco Skyes</h1>
+                </div>
+                <img class="img-menu" src="images/square_menu.png" alt="menu.png" onClick="changeClass()">
+            </div>
+         </div>
+         <nav>
+             <ul class="nav-bar" id="responsive-class">
+                <li><a href="preston.html">Preston</a></li>
+                <!-- <li><a href="../lesson_two/plan/taget-audience.html">Target Aduience</a></li>
+                <li><a href="../lesson_two/plan/color-scheme.html">Color Scheme</a></li>
+                <li><a href="../lesson_two/plan/typography.html">Typography</a></li> -->
+                <li><a href="soda-sping.html">Soda Spring</a></li>
+                <li><a href="../weather/gallery-7.html">Gallery</a></li>
+                <li><a href="stormcenter.html">Storm center</a></li>
+                <li><a href="../lesson-5/preston.html">Preston APi</a></li>
+            </ul>
+         </nav>
+     </header>
+     <main class="main">
+         <div class="main-wrapper">
+            <h1>Fish Haven</h1>
+            <!-- <div class="hero"></div> -->
+            <img class="hero" src="images/fish-1.jpg" alt="hero_img.png">
+            <div class="over-info">
+                <h1>Weather summary</h1>
+                <div class="line"></div>
+                <h2>Currently: <span id="description"></span></h2>
+                <h2>Hight Temperature: <span id="max-temp"></span></h2>
+                <h2>Humidity: <span id="humidity"></span> %</h2>
+                <h2>Wind Speed: <span id="wind-speed"></span> mph</h2>
+                <h2>Wind Chill: <span id="wind-chill"></span></h2>
+            </div>
+            <!-- <div class="label-content">                
+                <p>
+                    "place holder"
+                </p>
+            </div> -->
+            <h1>Five Day Forecast</h1>
+                <div class="forecast-container">
+                    <div class="forecast-item">
+                        Monday
+                        <div class="img"></div>
+                        <img src="images/sunrise.png" alt="sunrise_img.png">
+                        <span id="d1"></span>
+                    </div>
+                    <div class="forecast-item">
+                        Tuesday
+                        <img src="images/sunrise.png" alt="sunrise_img.png">
+                        <span id="d2"></span>
+                    </div>
+                    <div class="forecast-item">
+                        Wednesday
+                        <img src="images/sunrise.png" alt="sunrise_img.png">
+                        <span id="d3"></span>
+                    </div>
+                    <div class="forecast-item">
+                        Thursday
+                        <img src="images/sunrise.png" alt="sunrise_img.png">
+                        <span id="d4"></span>
+                    </div>
+                    <div class="forecast-item">
+                        Friday
+                        <img src="images/sunrise.png" alt="sunrise_img.png">
+                        <span id="d5"></span>
+                    </div>
+                </div>
+                <div class="article-title-wrapper">
+                    <!-- <img class="article-title-img" src="images/wdd230_image_franklinOriginal.jpeg" alt=""> -->
+                    <div class="text-wrapper">
+                        <h1>Information</h1>
+                        <div class="line"></div>
+                        <div class="information"></div>
+                    </div>
+                </div>
+
+                <img class="hero" src="images/fish-2.jpg" alt="hero_img.png">
+
+                <div class="article-title-wrapper">
+                    <!-- <img class="article-title-img" src="images/wdd230_image_franklinOriginal.jpeg" alt=""> -->
+                    <div class="text-wrapper">
+                        <h1>Upcoming Events</h1>
+                        <div class="line"></div>
+                        <div class="events-soda"></div>
+
+                    </div>
+                </div>
+
+                <img class="hero" src="images/fish-3.jpg" alt="hero_img.png">
+
+
+                <div class="location-media">
+                    <div class="map-1">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.1636909086997!2d-98.86473978562087!3d19.231696552058768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce18ebcaadcb31%3A0x85f8719693771dc4!2sSalto%20del%20Agua%2028%2C%20Techichilco%2C%2056680%20Cocotitl%C3%A1n%2C%20M%C3%A9x.!5e0!3m2!1ses-419!2smx!4v1594065182283!5m2!1ses-419!2smx" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                    <div class="media">
+                        <h3>The Weather Site</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> 30 N 1st E</p>
+
+                        <p>
+                            <i class="fas fa-phone-volume"></i> (555) 555-5555
+                        </p>
+
+                        <div class="icon-media">
+                            <div class="instagram-icon-link">
+                                <a href="https://www.instagram.com/burgerking/"target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                            <div class="twitter-icon-link">
+                                <a href="https://twitter.com/BurgerKing"target="_blank">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </div>
+                            <div class="facebook-icon-link">
+                                <a href="https://www.facebook.com/burgerking"target="_blank">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+        </div>
+     </main>
+     <footer>
+        <div class="footer-container">
+            <p>&copy2022 | Eduardo Sánchez | <span id="current-date"></span> | <a class="url" href="https://www.byui.edu/online" target="_blank">BYUI Online Learning</a></p>
+            
+          </div>
+     </footer>
+</body>
+<script src="js/js-two.js"></script>
+<!-- <script src="js/windchill.js"></script> -->
+<script src="js/weatherLiveData.js"></script>
+<script src="js/fish-event.js"></script>
+</html>
