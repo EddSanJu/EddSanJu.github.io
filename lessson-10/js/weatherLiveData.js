@@ -4,9 +4,9 @@ function getwindChill(speed, temp) {
     windChill = (windChill > temp) ? temp : windChill;
     return windChill;
 }
-
+// https://api.openweathermap.org/data/2.5/forecast?id=3530103&appid=3d7765adfda40026bacdbba28683a6da cozumel
 const apiUrl = "http://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=3d7765adfda40026bacdbba28683a6da";
-
+// 3530103
 fetch(apiUrl)
     .then(response => response.json())
     .then(data => {
