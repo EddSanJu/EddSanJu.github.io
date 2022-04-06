@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous"
+  />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&family=Fredericka+the+Great&display=swap" rel="stylesheet">
+    
+
+    <link rel="icon" href="assets/keys.ico" />
+
+    <link rel="stylesheet" href="css/rentals-css/main.css">
+    <link rel="stylesheet" href="css/rentals-css/medium.css">
+    <link rel="stylesheet" href="css/rentals-css/small.css">
+    
+    <title>Rentals</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-bar-wrapper">
+                <div class="main-logo">
+                    <img src="assets/maya.png" alt="bird-logo">
+
+                    <img src="assets/menu.png" alt="menu" class="menu-img" onclick="changeClass()">
+                </div>
+                <ul class="nav-bar__" id="responsive-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="reservation.html">Reservation</a></li>
+                    <li><a href="tours.html">Tours</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="hero-img">
+            <img src="assets/rentals/hero-jeep.jpg" alt="hero-img">
+        </div>
+        <h1>This is our rents</h1>
+        <div class="rental-grid">
+            <section>
+                <h3>Honda Motor Scooters</h3>
+                <div class="rent-img">
+                    <img src="assets/rentals/hon-metro.jpg" alt="placeholder">
+                </div>
+                <div class="rent-inf">
+                    <p>Brand: <span class="hon-metro"></span></p>
+                    <p>Model: <span class="hon-metro-m"></span></p>
+                    <p>Cubic centimeters: <span class="hon-metro-cc"></span></p>
+                    <p>Max persons <span class="hon-metro-p"></span></p>
+                    <p>
+                        Price per day with reservation: <span class="hon-metro-price"></span><br>
+                        Price half day with reservation: <span class="hon-metro-price-half"></span><br>
+                        Price per day without reservation: <span class="hon-metro-price-no"></span><br>
+                        Price half day without reservation: <span class="hon-metro-price-half-no"></span>
+                    </p>
+                </div>
+            </section>
+            <section>
+                <h3>Honda Motor Scooters</h3>
+                <div class="rent-img">
+                    <img src="assets/rentals/hon-dio.jpg" alt="placeholder">
+                </div>
+                <div class="rent-inf">
+                    <p>Brand: <span class="hon-dio"></span></p>
+                    <p>Model: <span class="hon-dio-m"></span></p>
+                    <p>Cubic centimeters: <span class="hon-dio-cc"></span></p>
+                    <p>Max persons <span class="hon-dio-p"></span></p>
+                    <p>
+                        Price per day with reservation: <span class="hon-dio-price"></span><br>
+                        Price half day with reservation: <span class="hon-dio-price-half"></span><br>
+                        Price per day without reservation: <span class="hon-dio-price-no"></span><br>
+                        Price half day without reservation: <span class="hon-dio-price-half-no"></span>
+                    </p>
+                </div>
+            </section>
+            <section>
+                <h3>Honda Motor Scooters</h3>
+                <div class="rent-img">
+                    <img src="assets/rentals/hon-PCX.jpg" alt="placeholder">
+                </div>
+                <div class="rent-inf">
+                    <p>Brand: <span class="hon-pcx"></span></p>
+                    <p>Model: <span class="hon-pcx-m"></span></p>
+                    <p>Cubic centimeters: <span class="hon-pcx-cc"></span></p>
+                    <p>Max persons <span class="hon-pcx-p"></span></p>
+                    <p>
+                        Price per day with reservation: <span class="hon-pcx-price"></span><br>
+                        Price half day with reservation: <span class="hon-pcx-price-half"></span><br>
+                        Price per day without reservation: <span class="hon-pcx-price-no"></span><br>
+                        Price half day without reservation: <span class="hon-pcx-price-half-no"></span>
+                    </p>
+                </div>
+            </section>
+            <section>
+                <h3>ATV Side-by-Side</h3>
+                <div class="rent-img">
+                    <img src="assets/rentals/hon-pioner.jpg" alt="placeholder">
+                </div>
+                <div class="rent-inf">
+                    <p>Brand: <span class="hon-pioner"></span></p>
+                    <p>Model: <span class="hon-pioner-m"></span></p>
+                    <p>Max persons <span class="hon-pioner-p"></span></p>
+                    <p>
+                        Price per day with reservation: <span class="hon-pioner-price"></span><br>
+                        Price half day with reservation: <span class="hon-pioner-price-half"></span><br>
+                        Price per day without reservation: <span class="hon-pioner-price-no"></span><br>
+                        Price half day without reservation: <span class="hon-pioner-price-half-no"></span>
+                    </p>
+                </div>
+            </section>
+            <section>
+                <h3>Jeep</h3>
+                <div class="rent-img">
+                    <img src="assets/rentals/jeep-4p.jpg" alt="placeholder">
+                </div>
+                <div class="rent-inf">
+                    <p>Brand: <span class="jeep-4"></span></p>
+                    <p>Model: <span class="jeep-4-m"></span></p>
+                    <p>Transmition: <span class="jeep-4-t"></span></p>
+                    <p>Max persons <span class="jeep-4-p"></span></p>
+                    <p>
+                        Price per day with reservation: <span class="jeep-4-price"></span><br>
+                        Price half day with reservation: <span class="jeep-4-price-half"></span><br>
+                        Price per day without reservation: <span class="jeep-4-price-no"></span><br>
+                        Price half day without reservation: <span class="jeep-4-price-half-no"></span>
+                    </p>
+                </div>
+            </section>
+            <section>
+                <h3>Jeep</h3>
+                <div class="rent-img">
+                    <img src="assets/rentals/jeep-2p.png" alt="placeholder">
+                </div>
+                <div class="rent-inf">
+                    <p>Brand: <span class="jeep-2"></span></p>
+                    <p>Model: <span class="jeep-2-m"></span></p>
+                    <p>Transmition: <span class="jeep-2-t"></span></p>
+                    <p>Max persons <span class="jeep-2-p"></span></p>
+                    <p>
+                        Price per day with reservation: <span class="jeep-2-price"></span><br>
+                        Price half day with reservation: <span class="jeep-2-price-half"></span><br>
+                        Price per day without reservation: <span class="jeep-2-price-no"></span><br>
+                        Price half day without reservation: <span class="jeep-2-price-half-no"></span>
+                    </p>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-wrapper">
+            <div class="media-links-wrapper">
+                <div class="instagram-icon-link">
+                    <a href="https://www.instagram.com"target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+                <div class="twitter-icon-link">
+                    <a href="https://twitter.com"target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+                <div class="facebook-icon-link">
+                    <a href="https://www.facebook.com"target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </div>
+            </div> 
+            <div>Mayan Birds &copy; 2022 | All Rights Reserved | <a href="contact.html">Contact Us</a></div>
+        </div>
+    </footer>
+    
+</body>
+<script src="js/responsive.js"></script>
+<script src="js/rental.js"></script>
+</html>

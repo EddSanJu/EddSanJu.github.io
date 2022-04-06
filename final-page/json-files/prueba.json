@@ -1,0 +1,18 @@
+{
+    "prueba": [
+        {
+            "primer": "valor",
+            "segundo": "valor",
+            "lista" : [
+                {
+                    "primer": "valor",
+                    "segundo": "valor"
+                },
+                {
+                    "primer": "valor",
+                    "segundo": "llegaste a mi"
+                }
+            ]
+        }
+    ]
+}

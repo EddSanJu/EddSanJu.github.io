@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous"
+  />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&family=Fredericka+the+Great&display=swap" rel="stylesheet">
+    
+    <link rel="icon" href="assets/keys.ico" />
+
+    <link rel="stylesheet" href="css/reservation-css/main.css">
+    <link rel="stylesheet" href="css/reservation-css/medium.css">
+    <link rel="stylesheet" href="css/reservation-css/small.css">
+
+    <title>Reservation</title>
+</head>
+<body onload="setPlaceholderImg()">
+    <header>
+        <nav>
+            <div class="nav-bar-wrapper">
+                <div class="main-logo">
+                    <img src="assets/maya.png" alt="bird-logo">
+
+                    <img src="assets/menu.png" alt="menu" class="menu-img" onclick="changeClass()">
+                </div>
+                <ul class="nav-bar__" id="responsive-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="rentals.html">Rentals</a></li>
+                    <li><a href="tours.html">Tours</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="hero-img">
+            <img src="assets/reservation/shake-hand.jpg" alt="">
+        </div>
+        <h1>Policies And Norms</h1>
+        <div class="policies">
+            <ul>
+                <li>A $50 security deposit is required to confirm reservations.</li>
+                <li>A valid drivers license is required in hand at time of rental.</li>
+                <li>No one under 12 years of age is allowed to ride on the scooters.</li>
+                <li>Fuel charge not included.</li>
+                <li>Liability insurance is free of charge.</li>
+                <li>Reservations rate requires 24 hour prior notification.</li>
+                <li>Free delivery to Cozumel hotel, Airbnb, or private residence for 2+ day rentals.</li>
+                <li>Payment via Google Pay, cash, credit card, debit card, or PayPal.</li>
+                <li>Rentals may be returned to either location.</li>
+            </ul>
+        </div>
+        <h1>Make your reservation</h1>
+        <form action="">
+            <label for="vehicuñe">Select Your Vehicule</label>
+            <select name="vehicule" id="vehicule">
+                <option value="">Select</option>
+                <option value="honda-metropolitan">Honda Metropolitan</option>
+                <option value="honda-dio">Honda Dio</option>
+                <option value="honda-pcx150">Honda PCX150</option>
+                <option value="honda-pioneer">Honda Pioneer 1000</option>
+                <option value="jeep-4">4-door Jeep Wrangler</option>
+                <option value="jeep-2">2-door Jeep Wrangler</option>
+            </select>
+            <button type="" onclick="fillData()" >Select</button>
+        </form>
+        <div class="selected-vehicule"></div>
+        <div class="btn-wrapper">
+            <button onclick="alertReserv()" class="main-btn">Reserv</button>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-wrapper">
+            <div class="media-links-wrapper">
+                <div class="instagram-icon-link">
+                    <a href="https://www.instagram.com"target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+                <div class="twitter-icon-link">
+                    <a href="https://twitter.com"target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+                <div class="facebook-icon-link">
+                    <a href="https://www.facebook.com"target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </div>
+            </div> 
+            <div>Mayan Birds &copy; 2022 | All Rights Reserved | <a href="contact.html">Contact Us</a></div>
+        </div>
+    </footer>
+</body>
+<script src="js/responsive.js"></script>
+<script src="js/reservation.js"></script>
+</html>

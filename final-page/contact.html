@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous"
+  />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&family=Fredericka+the+Great&display=swap" rel="stylesheet">
+    
+    <link rel="icon" href="assets/keys.ico" />
+
+    <link rel="stylesheet" href="css/contact-css/main.css">
+    <link rel="stylesheet" href="css/contact-css/medium.css">
+    <link rel="stylesheet" href="css/contact-css/small.css">
+
+    <title>Contact Us</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-bar-wrapper">
+                <div class="main-logo">
+                    <img src="assets/maya.png" alt="bird-logo">
+
+                    <img src="assets/menu.png" alt="menu" class="menu-img" onclick="changeClass()">
+                </div>
+                <ul class="nav-bar__" id="responsive-nav">
+                    <li><a href="index.html">Menu</a></li>
+                    <li><a href="rentals.html">Rentals</a></li>
+                    <li><a href="reservation.html">Reservation</a></li>
+                    <li><a href="tours.html">Tours</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="hero-img">
+            <img src="assets/contact/contact-us.jpg" alt="">
+        </div>
+        <h1>we appreciate feedback</h1>
+        <div class="form-wrapper">
+            <form action="">
+                <label for="Name">Name</label>
+                <input type="text" placeholder="Your name here">
+
+                <label for="email">Email</label>
+                <input type="email" placeholder="User@demo.com">
+
+                <label for="comments">Comment</label>
+                <textarea name="comments" id="comments" cols="30" rows="7" placeholder="Write your comments here"></textarea>
+            </form>
+            <button onclick="thanks()">Send</button>
+        </div>
+        <h1>Where We Are?</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d239283.13880009015!2d-87.01434150575706!3d20.432349276688246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4ef8efb0d19327%3A0x342ebcae5c018bfc!2sCozumel!5e0!3m2!1ses-419!2smx!4v1649238395568!5m2!1ses-419!2smx" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <h3>Don't Forget to follow us in our social media</h3>
+    </main>
+    <footer>
+        <div class="footer-wrapper">
+            <div class="media-links-wrapper">
+                <div class="instagram-icon-link">
+                    <a href="https://www.instagram.com"target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+                <div class="twitter-icon-link">
+                    <a href="https://twitter.com"target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+                <div class="facebook-icon-link">
+                    <a href="https://www.facebook.com"target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </div>
+            </div> 
+            <div>Mayan Birds &copy; 2022 | All Rights Reserved | <a href="contact.html">Contact Us</a></div>
+        </div>
+    </footer>
+    
+</body>
+<script src="js/responsive.js"></script>
+<script src="js/contact.js"></script>
+</html>

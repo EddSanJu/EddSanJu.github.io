@@ -127,8 +127,12 @@ box-shadow: 10px -19px 85px 49px rgba(0,0,0,0.75);
 
 }
 
+.content {
+    text-align: center;
+}
+
 .grid img {
-    width: 100%;
+    width: 400px;
     height: 400px;
     object-fit: cover;
 }
@@ -157,6 +161,8 @@ box-shadow: 10px -19px 85px 49px rgba(0,0,0,0.75);
     align-items: center;
     width: 100%;
 }
+
+/* footer styles */
 
 .footer-wrapper a {
     color:rgb(211, 53, 182);

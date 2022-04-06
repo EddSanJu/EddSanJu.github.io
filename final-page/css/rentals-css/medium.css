@@ -1,0 +1,9 @@
+@media only screen and (max-width: 950px) {
+    .hero-img img {
+        height: 300px;
+    }
+
+    .rental-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}

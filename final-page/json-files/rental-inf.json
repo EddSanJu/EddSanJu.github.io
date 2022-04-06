@@ -1,0 +1,141 @@
+{
+    "allRentals": {
+        "honda_motor_scotters":[   
+            {
+                "brand": "Honda",
+                "model": "Metropolitan",
+                "cc": "49",
+                "persons": "1",
+                "prices": [
+                    {
+                        "reservation_prices" : 
+                            {
+                                "halfDay": "$20",
+                                "fullDay": "$30"
+                            }
+                    },
+                    {
+                        "walk_in_prices" : 
+                            {
+                                "halfDay": "$25",
+                                "fullDay": "$35"
+                            }
+                    }
+                ]
+            },
+            {
+                "brand": "Honda",
+                "model": "Dio",
+                "cc": "110",
+                "persons": "2",
+                "prices": [
+                    {
+                        "reservation_prices" : 
+                            {
+                                "halfDay": "$30",
+                                "fullDay": "$40"
+                            }
+                    },
+                    {
+                        "walk_in_prices" : 
+                            {
+                                "halfDay": "$35",
+                                "fullDay": "$45"
+                            }
+                    }
+                ]
+            },
+            {
+                "brand": "Honda",
+                "model": "PCX150",
+                "cc": "149",
+                "persons": "2",
+                "prices": [
+                    {
+                        "reservation_prices" : 
+                            {
+                                "halfDay": "$40",
+                                "fullDay": "$50"
+                            }
+                    },
+                    {
+                        "walk_in_prices" : 
+                            {
+                                "halfDay": "$45",
+                                "fullDay": "$55"
+                            }
+                    }
+                ]
+            }
+        ],
+        "ATV_side_by_side":
+            {
+                "brand": "Honda",
+                "model": "Pioneer 1000",
+                "persons": "2",
+                "prices": [
+                    {
+                        "reservation_prices" : 
+                            {
+                                "halfDay": "$50",
+                                "fullDay": "$70"
+                            }
+                    },
+                    {
+                        "walk_in_prices" : 
+                            {
+                                "halfDay": "$60",
+                                "fullDay": "$80"
+                            }
+                    }
+                ]
+            },
+        "jeeps":
+        [
+            {
+                "brand": "Jeep",
+                "model": "Wrangler 4-door",
+                "transmition": "manual with A/C",
+                "persons": "5",
+                "prices": [
+                    {
+                        "reservation_prices" : 
+                            {
+                                "halfDay": "$70",
+                                "fullDay": "$100"
+                            }
+                    },
+                    {
+                        "walk_in_prices" : 
+                            {
+                                "halfDay": "$85",
+                                "fullDay": "$125"
+                            }
+                    }
+                ]
+            },
+            {
+                "brand": "Jeep",
+                "model": "Wrangler 2-door",
+                "transmition": "manual",
+                "persons": "4",
+                "prices": [
+                    {
+                        "reservation_prices" : 
+                            {
+                                "halfDay": "$60",
+                                "fullDay": "$85"
+                            }
+                    },
+                    {
+                        "walk_in_prices" : 
+                            {
+                                "halfDay": "$70",
+                                "fullDay": "$90"
+                            }
+                    }
+                ]
+            }
+        ]
+    }
+}

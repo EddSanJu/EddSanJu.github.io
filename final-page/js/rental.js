@@ -1,0 +1,106 @@
+fetch('./json-files/rental-inf.json')
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (data) {
+        console.log(data);
+        var brand = data.allRentals.honda_motor_scotters[0].brand;
+        var model = data.allRentals.honda_motor_scotters[0].model;
+        var cc = data.allRentals.honda_motor_scotters[0].cc;
+        var persons = data.allRentals.honda_motor_scotters[0].persons;
+        var priceDayReservation = data.allRentals.honda_motor_scotters[0].prices[0].reservation_prices.fullDay;
+        var priceHalfdayReservation = data.allRentals.honda_motor_scotters[0].prices[0].reservation_prices.halfDay;
+        var priceDayRentalWP = data.allRentals.honda_motor_scotters[0].prices[1].walk_in_prices.fullDay;
+        var priceHalfdayRentalWP = data.allRentals.honda_motor_scotters[0].prices[1].walk_in_prices.halfDay;
+        document.querySelector('.hon-metro').innerHTML = brand;
+        document.querySelector('.hon-metro-m').innerHTML = model;
+        document.querySelector('.hon-metro-cc').innerHTML = cc;
+        document.querySelector('.hon-metro-p').innerHTML = persons;
+        document.querySelector('.hon-metro-price').innerHTML = priceDayReservation;
+        document.querySelector('.hon-metro-price-half').innerHTML = priceHalfdayReservation;
+        document.querySelector('.hon-metro-price-no').innerHTML = priceDayRentalWP;
+        document.querySelector('.hon-metro-price-half-no').innerHTML = priceHalfdayRentalWP;
+
+        var brand2 = data.allRentals.honda_motor_scotters[1].brand;
+        var model2 = data.allRentals.honda_motor_scotters[1].model;
+        var cc2 = data.allRentals.honda_motor_scotters[1].cc;
+        var persons2 = data.allRentals.honda_motor_scotters[1].persons;
+        var priceDayReservation2 = data.allRentals.honda_motor_scotters[1].prices[0].reservation_prices.fullDay;
+        var priceHalfdayReservation2 = data.allRentals.honda_motor_scotters[1].prices[0].reservation_prices.halfDay;
+        var priceDayRentalWP2 = data.allRentals.honda_motor_scotters[1].prices[1].walk_in_prices.fullDay;
+        var priceHalfdayRentalWP2 = data.allRentals.honda_motor_scotters[1].prices[1].walk_in_prices.halfDay;
+        document.querySelector('.hon-dio').innerHTML = brand2;
+        document.querySelector('.hon-dio-m').innerHTML = model2;
+        document.querySelector('.hon-dio-cc').innerHTML = cc2;  
+        document.querySelector('.hon-dio-p').innerHTML = persons2;
+        document.querySelector('.hon-dio-price').innerHTML = priceDayReservation2;
+        document.querySelector('.hon-dio-price-half').innerHTML = priceHalfdayReservation2;
+        document.querySelector('.hon-dio-price-no').innerHTML = priceDayRentalWP2;
+        document.querySelector('.hon-dio-price-half-no').innerHTML = priceHalfdayRentalWP2;
+
+        var brand3 = data.allRentals.honda_motor_scotters[2].brand;
+        var model3 = data.allRentals.honda_motor_scotters[2].model;
+        var cc3 = data.allRentals.honda_motor_scotters[2].cc;
+        var persons3 = data.allRentals.honda_motor_scotters[2].persons;
+        var priceDayReservation3 = data.allRentals.honda_motor_scotters[2].prices[0].reservation_prices.fullDay;
+        var priceHalfdayReservation3 = data.allRentals.honda_motor_scotters[2].prices[0].reservation_prices.halfDay;
+        var priceDayRentalWP3 = data.allRentals.honda_motor_scotters[2].prices[1].walk_in_prices.fullDay;
+        var priceHalfdayRentalWP3 = data.allRentals.honda_motor_scotters[2].prices[1].walk_in_prices.halfDay;
+        document.querySelector('.hon-pcx').innerHTML = brand3;
+        document.querySelector('.hon-pcx-m').innerHTML = model3;
+        document.querySelector('.hon-pcx-cc').innerHTML = cc3;
+        document.querySelector('.hon-pcx-p').innerHTML = persons3;
+        document.querySelector('.hon-pcx-price').innerHTML = priceDayReservation3;
+        document.querySelector('.hon-pcx-price-half').innerHTML = priceHalfdayReservation3;
+        document.querySelector('.hon-pcx-price-no').innerHTML = priceDayRentalWP3;
+        document.querySelector('.hon-pcx-price-half-no').innerHTML = priceHalfdayRentalWP3;
+
+        var brand4 = data.allRentals.ATV_side_by_side.brand;
+        var model4 = data.allRentals.ATV_side_by_side.model;
+        var persons4 = data.allRentals.ATV_side_by_side.persons;
+        var priceDayReservation4 = data.allRentals.ATV_side_by_side.prices[0].reservation_prices.fullDay;
+        var priceHalfdayReservation4 = data.allRentals.ATV_side_by_side.prices[0].reservation_prices.halfDay;
+        var priceDayRentalWP4 = data.allRentals.ATV_side_by_side.prices[1].walk_in_prices.fullDay;
+        var priceHalfdayRentalWP4 = data.allRentals.ATV_side_by_side.prices[1].walk_in_prices.halfDay;
+        document.querySelector('.hon-pioner').innerHTML = brand4;
+        document.querySelector('.hon-pioner-m').innerHTML = model4;
+        document.querySelector('.hon-pioner-p').innerHTML = persons4;
+        document.querySelector('.hon-pioner-price').innerHTML = priceDayReservation4;
+        document.querySelector('.hon-pioner-price-half').innerHTML = priceHalfdayReservation4;
+        document.querySelector('.hon-pioner-price-no').innerHTML = priceDayRentalWP4;
+        document.querySelector('.hon-pioner-price-half-no').innerHTML = priceHalfdayRentalWP4;
+
+        var brand5 = data.allRentals.jeeps[0].brand;
+        var model5 = data.allRentals.jeeps[0].model;
+        var transmition5 = data.allRentals.jeeps[0].transmition;
+        var persons5 = data.allRentals.jeeps[0].persons;
+        var priceDayReservation5 = data.allRentals.jeeps[0].prices[0].reservation_prices.fullDay;
+        var priceHalfdayReservation5 = data.allRentals.jeeps[0].prices[0].reservation_prices.halfDay;
+        var priceDayRentalWP5 = data.allRentals.jeeps[0].prices[1].walk_in_prices.fullDay;
+        var priceHalfdayRentalWP5 = data.allRentals.jeeps[0].prices[1].walk_in_prices.halfDay;
+        document.querySelector('.jeep-4').innerHTML = brand5;
+        document.querySelector('.jeep-4-m').innerHTML = model5;
+        document.querySelector('.jeep-4-t').innerHTML = transmition5;
+        document.querySelector('.jeep-4-p').innerHTML = persons5;
+        document.querySelector('.jeep-4-price').innerHTML = priceDayReservation5;
+        document.querySelector('.jeep-4-price-half').innerHTML = priceHalfdayReservation5;
+        document.querySelector('.jeep-4-price-no').innerHTML = priceDayRentalWP5;
+        document.querySelector('.jeep-4-price-half-no').innerHTML = priceHalfdayRentalWP5;
+
+        var brand6 = data.allRentals.jeeps[1].brand;
+        var model6 = data.allRentals.jeeps[1].model;
+        var transmition6 = data.allRentals.jeeps[1].transmition;
+        var persons6 = data.allRentals.jeeps[1].persons;
+        var priceDayReservation6 = data.allRentals.jeeps[1].prices[0].reservation_prices.fullDay;
+        var priceHalfdayReservation6 = data.allRentals.jeeps[1].prices[0].reservation_prices.halfDay;
+        var priceDayRentalWP6 = data.allRentals.jeeps[1].prices[1].walk_in_prices.fullDay;
+        var priceHalfdayRentalWP6 = data.allRentals.jeeps[1].prices[1].walk_in_prices.halfDay;
+        document.querySelector('.jeep-2').innerHTML = brand6;
+        document.querySelector('.jeep-2-m').innerHTML = model6;
+        document.querySelector('.jeep-2-t').innerHTML = transmition6;
+        document.querySelector('.jeep-2-p').innerHTML = persons6;
+        document.querySelector('.jeep-2-price').innerHTML = priceDayReservation6;
+        document.querySelector('.jeep-2-price-half').innerHTML = priceHalfdayReservation6;
+        document.querySelector('.jeep-2-price-no').innerHTML = priceDayRentalWP6;
+        document.querySelector('.jeep-2-price-half-no').innerHTML = priceHalfdayRentalWP6;
+    });

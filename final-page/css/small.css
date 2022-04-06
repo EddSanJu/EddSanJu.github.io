@@ -1,4 +1,8 @@
 @media only screen and (max-width: 550px) {
+    body h1 {
+        font-size: 1.2em;
+    }
+
     .nav-bar-wrapper {
         flex-direction: column;
     }
@@ -39,5 +43,24 @@
         margin-left: 30%;
         margin-top: 10px;
         margin-bottom: 5px;
+    }
+
+    .hero-header {
+        margin: 0;
+    }
+
+    .hero-header h1 {
+        font-size: 1.3em;
+    }
+
+    
+    .grid img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .hero-img img  {
+        height: 250px;
     }
 }

@@ -1,0 +1,19 @@
+@media only screen and (max-width: 950px) {
+    .grid{
+        grid-template-columns: 1fr;
+    }
+    .hero-header {
+        margin: 0;
+    }
+
+    .hero-header h1 {
+        opacity: 1.0;
+        background-color: gray;
+        font-size: 1.5em;
+    }
+
+
+.hero-img img  {
+    height: 300px;
+}
+}

@@ -1,11 +1,11 @@
-function changeClass () {
-    var x = document.getElementById("responsive-nav");
-    if (x.className === 'nav-bar__') {
-        x.className += 'active';
-    } else {
-        x.className = 'nav-bar__';
-    }
-}
+// function changeClass () {
+//     var x = document.getElementById("responsive-nav");
+//     if (x.className === 'nav-bar__') {
+//         x.className += 'active';
+//     } else {
+//         x.className = 'nav-bar__';
+//     }
+// }
 
 let day = new Date();
 let today = day.getDay();
